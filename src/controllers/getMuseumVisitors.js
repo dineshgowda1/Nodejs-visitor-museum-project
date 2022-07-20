@@ -25,7 +25,7 @@ class GetMuseumVisitors {
 				const currentVisitedMonth = (new Date(visitedData.month)).getMonth();
 				const currentVisitedYear = (new Date(visitedData.month)).getFullYear();
 				if(currentVisitedYear == visitedYear && currentVisitedMonth == visitedMonth) {
-					console.log(`Matched visitor entry for ${visitedYear} and ${visitedMonth}: ${JSON.stringify(visitedData)}`)
+					console.log(`Matched visitor entry for Year: ${visitedYear} and Month: ${monthsArray[visitedMonth]} - ${JSON.stringify(visitedData)}`)
 					delete visitedData.month;
 					for(let key in visitedData) {
 						visitedData[key] = Number(visitedData[key])
