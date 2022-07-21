@@ -4,7 +4,7 @@ const { RESPONSE_CODES } = require('./constants');
 class ResponseSchema {
 	/*
 	This function prepare response in case of successful operation
-	@params data - records received from getir Db
+	@params data - data to be sent as response
 	*/
 	static successResponse(data) {
 		return {
